@@ -20,7 +20,10 @@ class CakeMenuApp extends StatelessWidget {
 
           title: const Text(
             "Sweet Cake Bakery",
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
 
@@ -32,12 +35,16 @@ class CakeMenuApp extends StatelessWidget {
               children: [
                 const SizedBox(height: 20),
 
-                const Icon(Icons.cake, color: Colors.pink, size: 60),
+                const Icon(
+                  Icons.cake,
+                  color: Colors.pink,
+                  size: 60,
+                ),
 
                 const SizedBox(height: 10),
 
                 const Text(
-                  "Our Best Selling Cakes",
+                  "Our Signature Cakes",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -93,9 +100,16 @@ class CakeMenuApp extends StatelessWidget {
   }
 }
 
-Widget cakeCard(String imagePath, String cakeName, String price) {
+Widget cakeCard(
+  String imagePath,
+  String cakeName,
+  String price,
+) {
   return Card(
-    margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+    margin: const EdgeInsets.symmetric(
+      horizontal: 15,
+      vertical: 10,
+    ),
 
     elevation: 5,
 
@@ -119,7 +133,8 @@ Widget cakeCard(String imagePath, String cakeName, String price) {
 
           Expanded(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment:
+                  CrossAxisAlignment.start,
 
               children: [
                 Text(
@@ -145,11 +160,17 @@ Widget cakeCard(String imagePath, String cakeName, String price) {
 
                 Row(
                   children: const [
-                    Icon(Icons.star, color: Colors.orange, size: 18),
+                    Icon(
+                      Icons.star,
+                      color: Colors.orange,
+                      size: 18,
+                    ),
 
                     SizedBox(width: 5),
 
-                    Text("Customer Favourite"),
+                    Text(
+                      "Customer Favourite",
+                    ),
                   ],
                 ),
               ],
